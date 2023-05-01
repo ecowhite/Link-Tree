@@ -1,0 +1,101 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+:root {
+    --bg-primary: #3e1eca;
+    --bg-secondary: rgb(228, 228, 228);
+    --txt-primary: #fefefe;
+    --txt-secondary: rgb(0, 0, 0);
+    --icons-bg-primary: tomato;
+    --icons-bg-secondary: #7777;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 20%;
+    border: 1px solid white ;
+    background-color: var(--bg-secondary);
+    color: var(--txt-secondary);
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.icons {
+    margin-top: 8px;
+    font-size: 24px;
+    color: var(--icons-bg-primary);
+}
+
+.description {
+    margin-top: 8px;
+    font-size: .8em;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    transform: rotate(2deg);
+    transition: .3s ease-in-out;
+}
+
+@media  screen and (max-width: 613px) {
+    .card {
+        width: 95%;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .description {
+        font-size: 1.5em;
+    }
+
+    .icons {
+        font-size: 30px;
+    }
+
+    .btn {
+        padding: 16px;
+        font-size: 1.5em;
+    }
+}
+
+@media  screen and (min-width: 613px) and (max-width: 977px) {
+    .card {
+        width: 50%;
+    }
+}
